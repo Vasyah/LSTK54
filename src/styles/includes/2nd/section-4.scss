@@ -1,0 +1,68 @@
+.section-4{
+    min-height: 918px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,239,132,1) 0%, rgba(247,198,169,1) 54.2%, rgba(21,186,196,1) 100.3% );
+    background-size: cover;
+    border-top: 15px solid $main-color;
+    border-bottom: 15px solid $main-color;
+    padding: 6.8rem 0 8.4rem 0;
+    background-attachment: fixed;
+    &__label{
+        position: relative;
+        margin: 0 auto;
+        padding: .8rem 1.1rem .6rem 1.2rem;
+        background-color: $last-color;
+        max-width: 200px;
+        font-size: 1.3rem;
+        font-weight: 100;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        &:before{
+            top: 50%;
+            left: 10%;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            content: '';
+            display: inline-block;
+            transform: translate(0,-50%);
+            background: url('assets/images/2nd/content/section-4/trust.svg') center center/cover no-repeat;
+        }
+    }
+    &__title{
+        margin: 3.2rem 0 0 0;
+        font-size: 3.8rem;
+        font-weight: 700;
+        text-align: center;
+        color: #000;
+        text-transform: uppercase;
+        @include media-lg{
+            font-size: 3rem;
+        }
+        @include media-md{
+            font-size: 2.5rem;
+        }
+    }
+    &__wrapper{
+        margin-top: 2rem;
+    }
+    &__col{
+        margin: 1.5rem auto 0 auto;
+    }
+    &__img{
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        object-fit: fill;
+    }
+    &__link{
+        height: 650px;
+        max-height: 650px;
+        display: block;
+        @include media-lg{
+            height: 550px;
+        }
+    }
+}
+

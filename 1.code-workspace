@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"compile-hero.generate-minified-css": true,
+		"compile-hero.generate-minified-javascript": true,
+		"compile-hero.generate-minified-html": true,
+		"compile-hero.scss-output-directory": "./",
+		"autoprefixer.formatOnSave": true,
+		"autoprefixer.findExternalAutoprefixer": true
+	},
+	"autoprefixer.options": {}
+}

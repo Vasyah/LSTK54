@@ -1,0 +1,104 @@
+.promo{
+    min-height: 600px;
+    background: url("assets/images/content/promo/bg.jpg") center center/cover no-repeat,
+    rgba(0,0,0, 0.7) center center/cover no-repeat;
+    background-blend-mode: overlay;
+    padding: 3rem 0 5rem 0 ;
+    &__title{
+        font-size: 5rem;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        margin: 2rem 0 0 0;
+        text-shadow: 0px 4px 4px #000000;
+        @include media-sm{
+            font-size: 4.2rem;
+        }
+        @include media-sm{
+            font-size: 3rem;
+        }
+    }
+    &__subtitle{
+        font-size: 3.6rem;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        margin: 0;
+        margin-top: 1.5rem;
+        @include media-md{
+            font-size: 3rem;
+        }
+        @include media-xs{
+            font-size: 1.6rem;
+        }
+
+    }
+    &__link{
+        color: $middle-color;
+        text-shadow: 0px 4px 4px #000000;
+        &:hover{
+            color: $main-color;
+        }
+    }
+    &__text{
+        margin-top: 2.3rem;
+        font-size: 1.8rem;
+        line-height: 1.33;
+        text-align: center;
+        color: #ffffff;    
+    }
+}
+
+.promo-cards{
+    margin-top: 2rem;
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        margin-top: 3.5rem;
+    }
+    &__box{
+        margin-top: 2rem;
+        width: 113px;
+        height: 113px;
+        position: relative;
+        background-color: $main-color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 0 0 rgba(0,0,0, 0.5);
+    }
+    &__img{
+        display: block;
+        max-width: 100%;
+    }
+    &__wrapper{
+        margin-left: 2.6rem;
+        max-width: 343px;
+    }
+    &__title{
+        min-height: 38px;
+        font-size: 1.7rem;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #fff;     
+    }
+    &__text{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #fff;      
+    }
+    &__inner{
+        margin-top: 5rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__btn{
+
+    }
+    
+}

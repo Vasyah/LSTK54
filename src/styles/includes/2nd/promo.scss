@@ -1,0 +1,82 @@
+.promo-2nd{
+    min-height: 800px;
+    background: url("assets/images/2nd/content/promo/bg.jpg") center center/cover no-repeat,
+    rgba(0,0,0, 0.7) center center/cover no-repeat;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+
+    &__list{
+        color:#fff;
+    }
+    &__home-link{
+        position: relative;
+        padding-left: 25px;
+        display: block;
+        &::before{
+            position: absolute;
+            content: '';
+            background: url("assets/images/2nd/content/promo/home.svg") center center/cover no-repeat;
+            width: 25px;
+            height: 25px;
+            // display: inline-block;
+            left: 0;
+            bottom: 0;
+            transform: translate(-10%,0%);
+
+        }
+    }
+    &__header{
+        margin-top: 3rem;
+        color: #fff;
+        font-size: 2.5rem;
+        padding-left: 3rem;
+        @include media-lg{
+            font-size: 2.2rem;
+        }
+        @include media-md{
+            font-size: 1.9rem;
+        }
+        @include media-sm{
+            font-size: 1.4rem;
+        }
+
+    }
+    &__item{
+        position: relative;
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+        padding-left: 25px;
+        &::before{
+            position: absolute;
+            content: '';
+            background: url("assets/images/2nd/content/promo/target.svg") center center/cover no-repeat;
+            width: 25px;
+            height: 25px;
+            left: 0;
+            bottom: 0;
+            transform: translate(-10%,10%);
+        }
+        @include media-lg{
+            font-size: 1.6rem;
+        }
+        @include media-md{
+            font-size: 1.4rem;
+        }
+        @include media-sm{
+            font-size: 1.4rem;
+        }
+    }
+
+
+}
+
+.promo-cards{
+    &__item-2nd{
+        padding: 1rem;  
+        background: rgba(255,255,255, 0.5);
+        border-right: 5px solid $main-color;
+        border-bottom: 5px solid $main-color;
+        box-shadow: 1px 1px 3px rgba(143, 140, 140, 0.942);
+    }
+
+}

@@ -1,0 +1,84 @@
+/*!
+Themes:lstk
+ */
+
+@import "../styles/utils/bootstrap";
+
+// @import "../styles/slick/slick.scss";
+
+// @import "../styles/slick/slick-theme.scss";
+
+@import "../styles/utils/variables";
+
+@import "../styles/utils/mixins";
+
+@import "../styles/utils/fonts";
+
+html {
+    font-size: 62.5%;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: $font-size;
+    min-height: 100vh;
+    line-height: 1.15;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    display: block;
+
+    &:hover {
+        // color: black;
+        text-decoration: none;
+        outline: none;
+    }
+
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+input {
+    border: 0;
+
+    &:active {
+        border: 0;
+        outline: none;
+    }
+
+    &:focus {
+        border: 0;
+        outline: none;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+@import "../styles/common/social";
+
+@import "../styles/common/forms";
+
+@import "../styles/common/buttons";
+
+@import "../styles/common/header";
+
+@import "../styles/common/content";
+
+@import "../styles/common/footer";
+
+@import "../styles/utils/media";

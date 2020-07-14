@@ -1,0 +1,71 @@
+.about{
+    padding: 3rem 0 3rem 0;
+    border-top: 15px solid $last-color;
+    background: url('assets/images/content/about/bg.svg') center center/cover no-repeat;
+    &__title{
+        margin: 3.2rem 0 0 0;
+        font-size: 3.8rem;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        @include media-lg{
+            font-size: 3rem;
+        }
+        @include media-md{
+            font-size: 2.5rem;
+        }    
+    }
+    &__item{
+        margin-top: 2rem;
+        font-size: 1.7rem;
+        color: #fff;
+        @include media-sm{
+            padding: 1rem;
+        }
+    }
+    &__text{
+        font-family: $post-font-family;
+        padding: 2rem ;
+        background-color: rgba(255,255,255,0.45);
+        text-align: left;
+        font-weight: 500;
+        line-height: 1.5;
+        box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+        // text-shadow: 5px 3px 3px rgba(150, 150, 150, 1);
+        border-right: 5px solid $last-color;
+        border-bottom: 5px solid darken($last-color,10%);
+        p{
+           color: #6C3BB3;
+        }
+        @include media-xl{
+            order:2;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+    }
+    &__paragraph{
+        &--main{
+        }
+    }
+    &__wrap{
+        width: 100%;
+        max-height: 350px;
+        @include media-xl{
+            max-height: 400px;
+        }
+    }
+    &__img{
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+        width: 75%;
+        height: 100%;
+        object-fit: fill;
+        @include media-xl{
+            margin-bottom: 2rem;
+            order:1;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.section-3{
+    min-height: 900px;
+    background: url('assets/images/2nd/content/section-3/bg.svg') center center/cover no-repeat;
+    padding: 5.7rem 0 13.8rem 0;
+    border-top: 15px solid $last-color;
+    &__label{
+        position: relative;
+        margin: 0 auto;
+        padding: .8rem 1.1rem .6rem 1.2rem;
+        background-color: $last-color;
+        max-width: 200px;
+        font-size: 1.3rem;
+        font-weight: 100;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        &:before{
+            top: 50%;
+            left: 10%;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            content: '';
+            display: inline-block;
+            transform: translate(0,-50%);
+            background: url('assets/images/2nd/content/section-3/algorithm.svg') center center/cover no-repeat;
+        }
+    }
+    &__title{
+        margin: 3.2rem 0 0 0;
+        font-size: 3.8rem;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        @include media-lg{
+            font-size: 3rem;
+        }
+        @include media-md{
+            font-size: 2.5rem;
+        }
+    }
+}
+.section-3-cards{
+    justify-content: center;
+    &__item{
+        min-height: 293px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 3.5rem;
+        text-align: center;
+        padding: 1rem;  
+        background: rgba(255,255,255, 0.1);
+        border-bottom: 3px solid $last-color;
+        &:hover{
+            background: rgba(255,255,255, 0.15);
+        }
+    }
+    &__box{
+        margin: 0 auto;
+        max-width: 50%;
+        min-height: 150px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        
+    }
+    &__img{
+        display: block;
+        max-width: 100%;
+    }
+    &__wrapper{
+        margin-left: 2.6rem;
+        max-width: 343px;
+    }
+    &__num{
+        font-size: 5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.45;
+        transform: translate(-100%, -25%);
+    }
+    &__title{
+        padding-left: 1rem;
+        position: relative;
+        min-height: 38px;
+        font-size: 1.7rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #fff;     
+    }
+    &__text{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #fff;      
+    }
+    &__inner{
+        margin-top: 2rem;
+        text-align: center;
+    }
+}

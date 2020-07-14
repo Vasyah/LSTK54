@@ -1,0 +1,16 @@
+@mixin hover_link($link-color,$percentage){
+    &:hover{
+        color: darken($link-color, $percentage);
+    }
+}
+@mixin hover_link--lighten($link-color,$percentage){
+    &:hover{
+        color: lighten($link-color, $percentage);
+    }
+}
+@mixin hover_btn($link-color, $percentage){
+        &:hover{
+            background-image: none;
+            background-color: darken($link-color, $percentage);
+        }
+}

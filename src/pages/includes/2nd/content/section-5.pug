@@ -1,0 +1,38 @@
+section.b-section-5
+    .container
+        .__label Заказать
+        h3.__title Оставьте заявку удобным для вас способом
+        .b-social.__social.row
+            .col-4.offset-2.col-sm-3.offset-sm-0
+                .__item
+                    a.__link(href="https://vk.com/id600258419" target="blank")
+                        img.__img(src="images/common/social/vk.svg", alt="Вконтакте")
+                    .__text Vkontakte
+            .col-4.col-sm-3
+                .__item
+                    a.__link(href="https://www.instagram.com/stroisibproect/" target="blank")
+                        img.__img(src="images/common/social/instagram.svg", alt="Инстаграм")
+                    .__text Instagram
+            .col-4.offset-2.col-sm-3.offset-sm-0
+                .__item
+                    a.__link(href="https://wa.me/"+phoneNumber target="blank")
+                        img.__img(src="images/common/social/whatsapp.svg", alt="Ватсап")
+                    .__text Whatsapp
+            .col-4.col-sm-3
+                .__item
+                    a.__link(href="tel:+"+phoneNumber target="blank")
+                        img.__img(src="images/common/social/phone.svg", alt="Звонок")
+                    .__text Позвонить
+        .row
+            .col-12.col-lg-8.offset-lg-2
+                form.b-form-request#form
+                    .__title Оставьте заявку
+                    label(for='validationDefault01') Ваше имя
+                    input.__input#validationDefault01.form-control(type='text', placeholder='Пример: Василий', required='')
+                    label(for='validationDefault02') Ваш номер телефона
+                    input.__input#validationDefault02.form-control(type='tel', placeholder='8-9xx-xxx-xx-xx', required='')
+                    label(for='validationDefault03') Электронная почта
+                    input.__input#validationDefault03.form-control(type='email', placeholder='example@mail.ru', required='')
+                    .__inner
+                        button.main-btn.btn(type='submit') Отправить
+

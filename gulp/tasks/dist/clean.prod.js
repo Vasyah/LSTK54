@@ -1,0 +1,1 @@
+"use strict";var del=require("del");module.exports=function(e){return del("assets").then(function(){e()})};

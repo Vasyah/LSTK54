@@ -1,0 +1,175 @@
+.header{
+    position: relative;
+    &__item{
+        text-align: center;
+        @include media-lg{
+            max-width: 50%;
+        }
+        @include media-md{
+            max-width: 75%;
+            min-width: 120px;
+        }
+    }
+}
+
+.header-info{
+    position: relative;
+    background: url("assets/images/2nd/footer/bg.svg") 0 0/cover no-repeat, rgba(0,0,0, 0.3) center center/cover no-repeat;
+    background-blend-mode: overlay;
+    padding: 1rem 0;
+    border-bottom: 15px solid $main-color;
+}
+
+.logo{
+    &__logo{
+        max-width: 200px;
+        margin-top: 1.6rem;
+        @include media-sm{
+            margin: 1.6rem auto 0 auto;
+            max-width: 120px;
+        }
+    }
+    &__img{
+        width: 100%;
+    }
+
+}
+.contact{
+    &__text{
+        margin-top: 2.3rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: right;
+        color: #ffffff;
+        @include media-sm{
+            font-size: 1rem;
+        }
+    }
+    &__link{
+        margin-top: 0.8rem;
+        font-size: 2.2rem;
+        text-align: right;
+        color: #ffffff;
+        @include hover_link($header-link-color,30%);
+        @include media-md{
+            font-size: 2rem;
+        }
+        @include media-sm{
+            font-size: 1.6rem;
+        }
+        @include media-custom(320px){
+            font-size: 1.3rem;
+        }
+        
+    }
+}
+.header-button{
+    &__btn{
+        @include bootstrap-button($main-color);
+        min-width: 140px;
+        min-height: 46px;
+        font-size: 1.4rem;
+        margin-top: 1.9rem;
+        @include media-sm{
+            min-width: 120px;
+        }
+        @include media-xs{
+            min-width: 110px;
+        }
+        @include media-custom(320px){
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.header__link {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 0 3px 3px rgba(0,0,0, 0.3);
+    background-color: $last-color;
+    border: 4px solid darken($last-color,15%);
+    border-radius: 10px;
+    padding: .5rem;
+    transition: transform ease-in 150ms;
+    backface-visibility: hidden;
+    &:hover {
+        transform: scale(1.1);
+        color: #fff;        
+    }
+    @include media-xl{
+        font-size: 1.3rem;
+    }
+    @include media-lg{
+        font-size: 1.5rem;
+    }
+    @include media-custom(320px){
+        font-size: 1.1rem;
+    }
+}
+.header__link--active {
+    background-color: $main-color;
+    border: 4px solid darken($main-color,15%);
+    color: darken(#fff,10%);
+    // font-weight: bold;
+}
+
+.header-menu-wrapper{
+    margin-top: 3rem;
+    @include media-lg{
+        display: none;
+    }
+}
+.header-menu{
+    @include media-lg{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.header-burger{
+    margin-top: 2rem;
+    display: none;
+    cursor: pointer;
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 30px;
+        cursor: pointer;
+        transition: .4s;
+    }
+  
+    &__icon {
+        display: block;
+        position: relative;
+        background: rgba(255,255,255,1);
+        width: 90%;
+        height: 4px;
+        transition: .4s;
+
+        &::after,
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            background: rgba(255,255,255,1);
+            width: 100%;
+            height: 4px;
+            transition: .4s;
+        }
+    &::after {
+      top: 8px;
+    }
+    &::before {
+      top: -8px;
+    }
+  }
+  @include media-lg{
+    display: flex;
+    justify-content: center;      
+  }
+}
+
